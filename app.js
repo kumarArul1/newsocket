@@ -8,6 +8,7 @@ var app = http.createServer(function(req, res) {
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.end(index);
 });
+<<<<<<< HEAD
 
 // Socket.io server listens to our app
 var io = require('socket.io').listen(app);
@@ -29,3 +30,8 @@ io.on('connection', function(socket) {
 });
 
 app.listen(3000);
+=======
+app.listen(8080, function () {
+  console.log('Example app listening on port 3000!');
+});
+>>>>>>> e78a6e62bb89f559ab48d427b12cef9601e9dd58
